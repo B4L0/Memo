@@ -1,0 +1,162 @@
+$font-color: rgb(100, 100, 100);
+$easy: #279854;
+$normal: #9a7609;
+$hard: #e43e3e;
+$extrme: #7a0606;
+$repeat: #1e3298;
+
+body {
+  margin: 0;
+  background: url(../img/bg3.jpg) no-repeat center center;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#content{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board{
+  background-color: rgba($color: #fff, $alpha: 0.1);
+}
+
+.field{
+  width: 20vh;
+  height: 20vh;
+  white-space: nowrap;
+  background: url(../img/reverse.jpg) center center no-repeat;
+  background-size: 100%;
+  padding: 0;
+}
+
+:not(.open).field:hover{
+  opacity: 90%;
+  cursor: pointer;
+}
+
+:not(.open).field:active{
+  opacity: 75%;
+}
+
+.field-img{
+  max-height: 20vh;
+  max-width: 20vh;
+  margin: 0;
+  display: block;
+}
+
+#board-table{
+  width: 100%;
+  border-spacing: 6px;
+}
+
+.open{
+  background: transparent;
+}
+
+#menu-overlay{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  position: absolute;
+}
+
+.menu{
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+}
+
+.menu-title{
+  margin: 15px 0;
+  color: $font-color;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+}
+
+.menu-content{
+  color: $font-color;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-actions {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.menu-action-button{
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: $font-color;
+}
+
+.menu-action-button:hover{
+  cursor: pointer;
+}
+
+#easy:hover{
+  color: $easy;
+  outline: 1px solid $easy;
+}
+
+#normal:hover{
+  color: $normal;
+  outline: 1px solid $normal;
+}
+
+#hard:hover{
+  color: $hard;
+  outline: 1px solid $hard;
+}
+
+#extreme:hover{
+  color: $extrme;
+  outline: 1px solid $extrme;
+}
+
+#repeat:hover{
+  color: $repeat;
+  outline: 1px solid $repeat;
+}
+
+#easy:active{
+  background-color: $easy;
+  color: $font-color;
+}
+
+#normal:active{
+  background-color: $normal;
+  color: $font-color;
+}
+
+#hard:active{
+  background-color: $hard;
+  color: $font-color;
+}
+
+#extreme:active{
+  background-color: $extrme;
+  color: $font-color;
+}
+
+#repeat:active{
+  background-color: $repeat;
+  color: $font-color;
+}

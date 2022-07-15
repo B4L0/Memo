@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "compile": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

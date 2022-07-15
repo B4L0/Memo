@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Memo</title>
+    <meta name="description" content="Memo game">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="scss/style.css">
+  </head>
+  <body oncontextmenu="return false">
+    <div id="menu-overlay">
+      <div class="menu" id="start-menu">
+        <div class="menu-title">
+          MEMO
+        </div>
+        <div class="menu-content">
+          <span>Before we start, choose difficulty</span>
+        </div>
+        <div class="menu-actions">
+          <button id="easy" class="menu-action-button">EASY</button>
+          <button id="normal" class="menu-action-button">NORMAL</button>
+          <button id="hard" class="menu-action-button">HARD</button>
+          <button id="extreme" class="menu-action-button">EXTREME</button>
+        </div>
+      </div>
+
+      <div class="menu" id="complete-menu" style="display: none;">
+        <div class="menu-title">
+          CONGRATULATIONS
+        </div>
+        <div class="menu-content">
+          <span>You've completed the game!</span>
+          <span>Want to try again?</span>
+        </div>
+        <div class="menu-actions">
+          <button id="repeat" class="menu-action-button">REPEAT</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div id="board">
+        <table id="board-table">
+          <!-- magic happens here -->
+        </table>
+      </div>
+    </div>
+
+    <script type="module" src="dist/app.js"></script>
+  </body>
+</html>
